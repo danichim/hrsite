@@ -487,6 +487,7 @@ footer {
     color: #bbb;
     font-family: 'MuseoSansRounded-500';
     margin-top: 10px;
+    list-style-type: none;
 }
 
 .advisor-detail .title {
