@@ -1,0 +1,803 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Custom Fonts styles
+   ========================================================================== */
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello.eot?72014661');
+    src: url('../fonts/fontello.eot?72014661#iefix') format('embedded-opentype'), url('../fonts/fontello.woff?72014661') format('woff'), url('../fonts/fontello.ttf?72014661') format('truetype'), url('../fonts/fontello.svg?72014661#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-100';
+    src: url('../fonts/MuseoSansRounded-100.eot');
+    src: url('../fonts/MuseoSansRounded-100.woff') format('woff'), url('../fonts/MuseoSansRounded-100.ttf') format('truetype'), url('../fonts/MuseoSansRounded-100.svg?#MuseoSansRounded-100') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-300';
+    src: url('../fonts/MuseoSansRounded-300.eot');
+    src: url('../fonts/MuseoSansRounded-300.woff') format('woff'), url('../fonts/MuseoSansRounded-300.ttf') format('truetype'), url('../fonts/MuseoSansRounded-300.svg?#MuseoSansRounded-300') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-500';
+    src: url('../fonts/MuseoSansRounded-500.eot');
+    src: url('../fonts/MuseoSansRounded-500.woff') format('woff'), url('../fonts/MuseoSansRounded-500.ttf') format('truetype'), url('../fonts/MuseoSansRounded-500.svg?#MuseoSansRounded-500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-700';
+    src: url('../fonts/MuseoSansRounded-700.eot');
+    src: url('../fonts/MuseoSansRounded-700.woff') format('woff'), url('../fonts/MuseoSansRounded-700.ttf') format('truetype'), url('../fonts/MuseoSansRounded-700.svg?#MuseoSansRounded-700') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-900';
+    src: url('../fonts/MuseoSansRounded-900.eot');
+    src: url('../fonts/MuseoSansRounded-900.woff') format('woff'), url('../fonts/MuseoSansRounded-900.ttf') format('truetype'), url('../fonts/MuseoSansRounded-900.svg?#MuseoSansRounded-900') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MuseoSansRounded-1000';
+    src: url('../fonts/MuseoSansRounded-1000.eot');
+    src: url('../fonts/MuseoSansRounded-1000.woff') format('woff'), url('../fonts/MuseoSansRounded-1000.ttf') format('truetype'), url('../fonts/MuseoSansRounded-1000.svg?#MuseoSansRounded-1000') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   Custom styles
+   1. Main style
+   2. Header section
+   3. About section
+   4. Approach section
+   5. Team section
+   6. Advisors section
+   7. Footer section
+   8. Media queries
+   ========================================================================== */
+
+body {
+    font-family: 'MuseoSansRounded-100';
+    color: #000;
+}
+
+h2.title-white {
+    color: #fff;
+    font-family: 'MuseoSansRounded-100';
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2.title-black {
+    color: #000;
+    font-family: 'MuseoSansRounded-100';
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+h2.title-black,
+.about {
+    font-size: 35px;
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.icon-assist {
+    font-size: 30px;
+    text-align: center;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer {
+    padding: 15px;
+}
+
+
+/* ==========================================================================
+   2. Header section
+   ========================================================================== */
+
+.cover-top-area {
+    background: rgba(255, 255, 255, 0) url("../images/section-header.jpg") no-repeat center center / cover;
+    padding: 120px 0;
+    min-height: 350px;
+    position: relative;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 400px;
+}
+
+.newsletter-form {
+    position: absolute;
+    bottom: -50px;
+    width: 100%;
+}
+
+.wrapper-form {
+    background: url("../images/newsletter.jpg");
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    display: table;
+    -webkit-box-shadow: 0px 20px 70px -12px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 20px 70px -12px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 20px 70px -12px rgba(0, 0, 0, 0.75);
+}
+
+.form-control-static {
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'MuseoSansRounded-500';
+}
+
+.form-inline {
+    float: left;
+    width: 100%;
+}
+
+.form-group {
+    border: none;
+    display: block;
+    float: left;
+    width: 42%;
+    padding-bottom: 20px;
+    padding-left: 2%;
+    padding-top: 20px;
+}
+
+.form-group p {
+    padding: 0;
+}
+
+.form-group input#email {
+    margin: 0;
+    width: 100%;
+}
+
+.btn-default {
+    background: rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-left: 2%;
+    border: none;
+    height: 50px;
+    width: 10%;
+}
+
+.icon-assist-ok {
+    color: #fff;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+#email {
+    margin: 20px 10px;
+    width: 80%;
+    height: 50px;
+    border: none;
+}
+
+
+/* ==========================================================================
+   3. About section
+   ========================================================================== */
+
+.section-area-about {
+    /*padding: 120px 0;*/
+    padding: 10% 0;
+    min-height: 350px;
+    color: #000;
+}
+
+.about-description {
+    min-height: 125px;
+    border-left: 1px #bbb solid;
+}
+
+.about-description strong {
+    font-family: 'MuseoSansRounded-500';
+}
+
+.about {
+    line-height: 125px;
+    margin: 0;
+    padding: 0!important;
+}
+
+.about-description p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #000;
+    /*padding-bottom: 20px;*/
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.about-left {
+    padding-top: 40px;
+    text-align: center;
+}
+
+
+/* ==========================================================================
+   4. Approach section
+   ========================================================================== */
+
+.cover-middle-area {
+    background: rgba(255, 255, 255, 0) url("../images/section-middle.jpg") no-repeat center center / cover;
+    padding: 5% 0;
+    min-height: 350px;
+}
+
+.approach {
+    color: #fff;
+    text-align: center;
+    font-family: 'MuseoSansRounded-100';
+    font-size: 16px;
+    display: block;
+}
+
+.approach .title {
+    font-family: 'MuseoSansRounded-500';
+    display: block;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.approach .description {
+    display: block;
+    letter-spacing: 1px;
+}
+
+
+/* ==========================================================================
+   5. Team section
+   ========================================================================== */
+
+.section-area {
+    /*padding: 120px 0;*/
+    padding: 5% 0;
+    min-height: 350px;
+    color: #000;
+}
+
+.member {
+    color: #fff;
+    text-align: center;
+    font-family: 'MuseoSansRounded-300';
+    font-size: 16px;
+    display: block;
+}
+
+.member img {
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.member .title {
+    font-family: 'MuseoSansRounded-300';
+    display: block;
+    font-weight: bold;
+    color: #59bfb3;
+    padding-bottom: 10px;
+}
+
+.member .description {
+    font-family: 'MuseoSansRounded-500';
+    display: block;
+    color: #bbb;
+    font-size: 12px;
+}
+
+
+/* ==========================================================================
+   6. Advisors section
+   ========================================================================== */
+
+.cover-footer-area {
+    background: rgba(255, 255, 255, 0) url("../images/section-footer.png") no-repeat center center / cover;
+    padding: 5% 0;
+    min-height: 350px;
+    color: #fff;
+}
+
+.advisor-left .img-advisor {
+    float: right;
+    width: 20%;
+}
+
+.advisor-right .img-advisor {
+    float: left;
+    width: 20%;
+}
+
+.advisor-left .advisor-detail {
+    float: left;
+    width: 78%;
+}
+
+.advisor-right .advisor-detail {
+    float: right;
+    width: 78%;
+}
+
+.img-adv-right {
+    width: 100px;
+    float: right;
+    display: block;
+}
+
+.img-adv-left {
+    width: 100px;
+    float: left;
+    display: block;
+}
+
+.advisor-left {
+    float: right;
+    text-align: right;
+}
+
+.advisor-right {
+    float: left;
+    text-align: left;
+}
+
+.advisor-left,
+.advisor-right {
+    width: 80%;
+    padding: 15px 0;
+}
+.advisor-detail {
+    padding-top: 10px;
+}
+
+.advisor-detail ul {
+    font-size: 12px;
+    color: #bbb;
+    font-family: 'MuseoSansRounded-500';
+    margin-top: 10px;
+}
+
+.advisor-detail .title {
+    padding-bottom: 10px;
+    font-family: 'MuseoSansRounded-300';
+}
+
+
+/* ==========================================================================
+   7. Footer section
+   ========================================================================== */
+
+.right-side {
+    margin-right: 10%;
+    font-family: 'MuseoSansRounded-500';
+}
+
+.left-side {
+    margin-left: 10%;
+    font-family: 'MuseoSansRounded-500';
+}
+
+.right-side a {
+    color: #59bfb3;
+}
+
+.right-side a:hover {
+    text-decoration: none;
+}
+
+
+/* ==========================================================================
+   8. Media queries
+   ========================================================================== */
+
+@media screen and (max-width:1500px) {
+    .advisor-left .advisor-detail {
+        width: 73%;
+    }
+    .advisor-right .advisor-detail {
+        width: 73%;
+    }
+    .advisor-detail {
+        min-height: 150px;
+    }
+}
+
+@media screen and (max-width:1200px) { 
+
+    .advisor-left,
+    .advisor-right {
+        width: 100%;
+    }
+    .img-advisor .img-adv-right,
+    .img-advisor .img-adv-left {
+        width: 100%;
+    }
+    .advisor-detail {
+        min-height: 100px;
+        padding-top: 10px;
+    }
+    .about-description { border: none; }
+    .about { line-height: inherit; }
+    .advisor-left .advisor-detail {
+        width: 73%;
+    }
+    .advisor-right .advisor-detail {
+        width: 73%;
+    }
+    .advisor-detail {
+        min-height: 150px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .newsletter-form {
+        position: relative;
+        bottom: -100px;
+    }
+    .advisor-left,
+    .advisor-right {
+        width: 100%;
+    }
+    .img-adv-right,
+    .img-adv-left {
+        width: 100%;
+    }
+    .advisor-left .img-advisor {
+        float: left;
+        width: 20%;
+    }
+    .advisor-left .advisor-detail {
+        float: right;
+        width: 78%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .logo-img {
+        width: 90%;
+    }
+    .left-side {
+        margin-left: 2% !important;
+        text-align: center;
+    }
+    .right-side {
+        margin-right: 2% !important;
+        text-align: center;
+    }
+    .newsletter-form {
+        position: relative;
+        bottom: -100px;
+    }
+    .wrapper-form {
+        width: 90%;
+    }
+    .form-group {
+        width: 100%;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .form-group:nth-child(2) {
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .btn-default {
+        width: 60px;
+    }
+    .advisor-detail {
+        min-height: 100px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .form-group:nth-child(2) {
+        width: 70%;
+        padding-bottom: 20px;
+    }
+    .advisor-detail {
+        min-height: 100px;
+        padding-top: 0;
+    }
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+    thead {
+        display: table-header-group;
+    }
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
