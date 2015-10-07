@@ -256,12 +256,15 @@
     $(document).ready(function() {
         $('#checksubmit').click(function(){
             var email = $("#email").val();
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
                 //alert(email);
                 if (email == '') { 
                     alert ('Please insert valid email address.'); 
-                } else {
+                } if (email.match(mailformat)) {
                     alert ('Thank you for contacting us !');
-                }   
+                }   else {
+                    alert (' Email address invalid !');
+                }
         });
     });
     </script>
