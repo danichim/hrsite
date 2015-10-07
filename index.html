@@ -263,7 +263,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $('#mc-embedded-subscribe').click(function() {
-            var email = $("#email").val();
+            var email = $("#mce-EMAIL").val();
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
             if (email.match(mailformat)) {
                 alert('Thank you for contacting us !');
