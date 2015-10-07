@@ -254,15 +254,14 @@
     <script type="text/javascript" src="js/retina.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
-        $('#checksubmit').click(function(){
+        $('#checksubmit').click(function() {
             var email = $("#email").val();
-            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
-                //alert(email);
-                 if (email.match(mailformat)) {
-                    alert ('Thank you for contacting us !');
-                }  else {
-                    alert (' Email address invalid !');
-                }
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (email.match(mailformat)) {
+                alert('Thank you for contacting us !');
+            } else {
+                alert(' Email address invalid !');
+            }
         });
     });
     </script>
