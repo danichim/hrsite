@@ -56,7 +56,8 @@
                 </div>
                 <div class="newsletter-form">
                     <div class="wrapper-form">
-                        <form class="form-inline" action="https://getsimpleform.com/messages?form_api_token=e84c22c76efcec6118f2747609f33554" method="post">
+                        <form class="form-inline" action="https://getsimpleform.com/messages?form_api_token=e84c22c76efcec6118f2747609f33554" method="post" onsubmit="validateForm();">
+                            <!-- <input type='hidden' name='redirect_to' value='http://fooey.com/thank-you.html' /> -->
                             <div class="form-group">
                                 <label class="sr-only">Email</label>
                                 <p class="form-control-static">Sign up with your email and never miss an update.</p>
@@ -65,7 +66,7 @@
                                 <label for="email" class="sr-only">Email</label>
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
                             </div>
-                            <button type="submit" class="btn btn-default"><i class="icon-assist-ok"></i></button>
+                            <button id="checksubmit" type="submit" class="btn btn-default"><i class="icon-assist-ok"></i></button>
                         </form>
                     </div>
                 </div>
@@ -154,7 +155,7 @@
                                 <p class="description">Co-founder and Chief Operating Officer</p>
                             </div>
                             <div class="col-xs-12 col-md-1 member">&nbsp;</div>
-                           </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -251,6 +252,19 @@
     ga('send', 'pageview');
     </script>
     <script type="text/javascript" src="js/retina.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#checksubmit').click(function(){
+            var email = $("#email").val();
+                //alert(email);
+                if (email == '') { 
+                    alert ('Please insert valid email address.'); 
+                } else {
+                    alert ('Thank you for contacting us !');
+                }   
+        });
+    });
+    </script>
 </body>
 
 </html>
