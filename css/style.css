@@ -634,6 +634,11 @@ footer {
         padding-top: 0;
     }
 }
+@media screen and (max-width:400px) {
+    .member {
+        min-height: 230px;
+    }
+}
 
 
 
